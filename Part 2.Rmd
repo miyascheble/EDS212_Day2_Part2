@@ -47,7 +47,8 @@ ggplot(data=penguins, aes(x = species, y = flipper_length_mm)) +
   geom_jitter(aes(color=species), size = 1, width = 0.4) + 
   labs(x = "Species",
        y = "Flipper length (mm)",
-       title = "Palmer penguin flipper length by species")
+       title = "Palmer penguin flipper length by species",
+       subtitle = "Jitterplot")
 ```
 
 
