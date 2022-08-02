@@ -24,9 +24,10 @@ tail(penguins)
 
 ```{r}
 ggplot(data=penguins, aes(x = body_mass_g, y = flipper_length_mm)) + 
-  geom_point(aes(color = species), size = 4)
+  geom_point(aes(color = species), size = 1) +
+  facet_wrap(~island) +
+  theme_minimal() + 
+  labs(x = "Body mass (g)",
+       y = "Flipper length (mm)",
+       title = "Palmer penguin size measurements")
 ```
-
-
-
-
