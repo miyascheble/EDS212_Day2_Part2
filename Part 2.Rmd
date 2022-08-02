@@ -18,7 +18,7 @@ tail(penguins)
 
 ### Scatterplot of body mass versus flipper length
 
-1.  I am using ggplot. We need to tell it that we are using ggplot.
+1.  We need to tell it that we are using ggplot.
 2.  We need to tell it about the data including the name of the dataframe and what variables we have.
 3.  Tell it about the geometry and the type of graph we want.
 
