@@ -31,3 +31,23 @@ ggplot(data=penguins, aes(x = body_mass_g, y = flipper_length_mm)) +
        y = "Flipper length (mm)",
        title = "Palmer penguin size measurements")
 ```
+
+### Create a ggplot graph of penguin bill length versus bill depth with point color dependent on species
+
+```{r}
+ggplot(data=penguins, aes(x = bill_length_mm, y = bill_depth_mm)) + 
+  geom_point(aes(color=species), size = 1) +
+  labs(x = "Bill length (mm)",
+       y = "Bill depth (mm)",
+       title = "Palmer penguin bill measurements")
+```
+
+```{r}
+ggplot(data=penguins, aes(x = species, y = flipper_length_mm)) + 
+  geom_jitter(aes(color=species), size = 1, width = 0.4) + 
+  labs(x = "Species",
+       y = "Flipper length (mm)",
+       title = "Palmer penguin flipper length by species")
+```
+
+
