@@ -1,0 +1,9 @@
+---
+title: "EDS212_Day2_Part2"
+output: html_document
+date: "2022-08-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
